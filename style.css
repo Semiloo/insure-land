@@ -1,0 +1,449 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    transition: all 2s linear;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 8rem;
+    background-color: white;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 15px;
+
+}
+.menu_btn {
+    display: none;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 28px;
+    font-size: 14px;
+    align-items: center;
+}
+
+nav ul li:last-child {
+    border: 1px black solid;
+    padding: 8px;
+}
+
+.container .human {
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 520px;
+    position: relative;
+
+
+}
+
+.container li {
+    color: hsl(273, 4%, 51%);
+}
+
+.container .human h1 {
+    width: 90%;
+    font-size: 65px;
+    line-height: 50px;
+}
+
+.container .human div {
+    color: white;
+    width: 40%;
+}
+
+.container .human .fam img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    margin-top: 50%;
+}
+
+.container .human #right-pattern {
+    position: absolute;
+    right: 0%;
+    top: 0;
+    width: 25%;
+}
+
+.container .human #left-pattern {
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    width: 13%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+}
+
+.container .human p {
+    margin-top: 7%;
+    width: 90%;
+}
+
+.container .human button {
+    border: 1px white solid;
+    background-color: hsl(256, 26%, 20%);
+    padding: 8px;
+    color: white;
+    margin-top: 5%;
+    width: 24.5%;
+    padding: 2%;
+}
+
+.bowl {
+    padding: 10rem;
+}
+
+.container .human .two #mob {
+    display: none;
+}
+
+.container .human .two #mop {
+    display: none;
+}
+
+.different img {
+    width: 50px;
+}
+
+.different {
+    display: flex;
+    gap: 20px
+}
+
+.lovely {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.lovely .p {
+    text-align: justify;
+
+}
+
+.bowl h1 {
+    font-size: 50px;
+    margin: 43px 0;
+    color: hsl(270, 9%, 17%);
+}
+
+.bowl span {
+    width: 110px;
+    border-top: 1px solid hsl(273, 4%, 51%);
+    display: block;
+}
+
+.lovely h2 {
+    color: hsl(270, 9%, 17%);
+}
+
+.lovely p {
+    color: hsl(273, 4%, 51%);
+}
+
+.find {
+    background-color: hsl(256, 26%, 20%);
+    margin: auto 10%;
+    width: 75%;
+    color: white;
+    align-items: center;
+    background: hsl(256, 26%, 20%) url(/images/bg-pattern-how-we-work-desktop.svg);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.find h2 {
+    font-size: 45px;
+    width: 39%;
+    margin-left: 3%;
+    padding-top: 7px;
+}
+
+.find button {
+    margin-right: 11%;
+    width: 15%;
+    height: 40px;
+    color: white;
+    border: 1px solid white;
+    background-color: hsl(256, 26%, 20%);
+}
+
+footer {
+    margin: 100px 0% 0;
+    height: 245px;
+    background-color: hsl(0, 0%, 98%);
+    padding: 3% 12%;
+    width: 100%;
+
+}
+
+.tail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(273, 4%, 51%);
+    padding-bottom: 2%;
+}
+
+.jet {
+    width: 3%;
+}
+
+.ref {
+    display: flex;
+    gap: 10rem;
+    padding: 3% 0;
+
+}
+
+.ref h4 {
+    color: hsl(273, 4%, 51%);
+}
+
+.ref ul {
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.ref div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+nav.show{
+    display: none;
+}
+
+/* MOBILE SCREEN STARTS HERE */
+
+@media screen and (max-width:640px) {
+    nav {
+        display: none;
+    }
+    header {
+        position: relative;
+    }
+
+    nav.show {
+        display: block;
+        position: absolute;
+        top: 64px;
+        right: 0;
+        padding: 20%;
+        z-index: 2;
+        background: hsl(270, 9%, 17%) url(/images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        background-position: bottom;
+        background-size: contain;
+    }
+    nav.show ul{
+        flex-direction: column;
+        color: white;     
+    }
+    .container li{
+        color: white;
+        font-size: 20px;
+    }
+    nav ul li:last-child {
+        border: 1px white solid;
+        padding: 8px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .menu_btn {
+        display: block;
+        z-index: 3;
+        /* width: 10px; */
+    }
+
+    .container .human {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .container .human div {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .human .two {
+        padding: 80px 0;
+        position: relative;
+    }
+
+    .container .human .two #mob {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -20px;
+    }
+
+    .container .human .two #mop {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -170px;
+    }
+
+    .container .human .fam img {
+        margin-top: 0%;
+        width: 100%;
+        height: auto;
+    }
+
+    .container .human h1 {
+        font-size: 50px;
+        text-align: center;
+        line-height: 1;
+        width: 90%;
+    }
+
+    .container .human p {
+        text-align: center;
+        padding: 4%;
+        line-height: 1.5;
+    }
+
+    .different {
+        flex-direction: column;
+
+    }
+
+    .container .human .two h1 {
+
+        width: 100%;
+    }
+
+    .find {
+        flex-direction: column;
+        width: 90%;
+        height: 240px;
+        text-align: center;
+    }
+
+    .find h2 {
+        width: 100%;
+        font-size: 45px;
+
+    }
+
+    .container .ref button {
+
+        border: 1px solid red;
+
+    }
+
+    .bowl {
+        width: 100%;
+        padding: 9rem 2rem;
+        display: flex;
+        flex-direction: column
+    }
+
+    footer {
+        padding: 4rem 0;
+        height: auto;
+    }
+
+    .ref {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .ref div {
+        align-items: center;
+        
+    }
+    .ref ul{
+        align-items: center;
+        
+    }
+    .ref ul li{
+        color: black;
+    }
+    .tail {
+        flex-direction: column;
+        gap: 25px;
+        padding: 12px;
+        align-items: center;
+
+
+    }
+
+    .tail img {
+        object-fit: contain;
+        width: 120px;
+    }
+
+    .icon {
+        width: 120px;
+    }
+
+    .tail .icon img {
+        width: 20px;
+    }
+
+    .bowl span {
+        align-self: center;
+    }
+
+    .bowl h1 {
+        font-size: 40px;
+    }
+
+    .lovely {
+        align-items: center;
+        text-align: center;
+    }
+
+}
